@@ -1,6 +1,6 @@
-import "./SobreNos.css";
+import "./style.css";
 
-function SobreNos() {
+export default function SobreNos() {
   return (
     <main className="sobre-nos">
       <section className="hero-sobre">
@@ -68,5 +68,3 @@ function SobreNos() {
     </main>
   );
 }
-
-export default SobreNos;

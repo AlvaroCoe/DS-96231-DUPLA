@@ -1,6 +1,6 @@
-import "./Produtos.css";
+import "./style.css";
 
-function Produtos() {
+export default function Produtos() {
   const produtos = [
     {
       titulo: "Rações Premium",
@@ -68,5 +68,3 @@ function Produtos() {
     </main>
   );
 }
-
-export default Produtos;
