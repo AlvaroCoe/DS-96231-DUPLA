@@ -19,7 +19,7 @@ export default function Header() {
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/produtos'>Produtos</NavLink>
                 <NavLink to='/servicos'>Serviços</NavLink>
-                <NavLink to='/sobre-nos'>Sobre Nós</NavLink>
+                <NavLink to='/sobrenos'>SobreNos</NavLink>
             </nav>
 
             <div className="header-acoes">
