@@ -7,12 +7,6 @@ export default function Header() {
     return (
         <header className="header-container">
             
-            <div className="header-logo-box">
-                <Link to='/' className='header-logo'>
-                    <h1>Pet & Shop</h1>
-                </Link>
-            </div>
-
             <div className="header-imagem">
                 <img src={imgLogo} alt="Imagem Logo" />
             </div>
@@ -21,7 +15,7 @@ export default function Header() {
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/produtos'>Produtos</NavLink>
                 <NavLink to='/servicos'>Serviços</NavLink>
-                <NavLink to='/sobrenos'>SobreNos</NavLink>
+                <NavLink to='/sobrenos'>Sobre nós</NavLink>
             </nav>
 
         </header>
