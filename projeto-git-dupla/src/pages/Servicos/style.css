@@ -1,0 +1,116 @@
+.servicos {
+  background: #fffdfd;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+  color: #444;
+}
+
+/* BANNER SERVIÇOS */
+.banner-servicos {
+  background: linear-gradient(135deg, #d8f7f5, #f3d8f8);
+  text-align: center;
+  padding: 5rem 2rem;
+  border-radius: 0 0 40px 40px;
+}
+
+.banner-servicos h1 {
+  font-size: 3.5rem;
+  color: #9d2ab1;
+  margin-bottom: 1.5rem;
+}
+
+.banner-servicos p {
+  max-width: 850px;
+  margin: auto;
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+/* GRID DE LISTA DE SERVIÇOS */
+.lista-servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+/* CARD DE CADA SERVIÇO */
+.card-servico {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.card-servico::before {
+  content: "🩺";
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  opacity: 0.15;
+}
+
+.card-servico:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(157, 42, 177, 0.15);
+}
+
+.card-servico h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #00bcb3; /* Tom ciano para diferenciar dos produtos */
+}
+
+.card-servico p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* SEÇÃO COMPROMISSO */
+.compromisso {
+  background: white;
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+  text-align: center;
+}
+
+.compromisso::before {
+  content: "🤝";
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  opacity: 0.15;
+}
+
+.compromisso h2 {
+  font-size: 2.2rem;
+  color: #9d2ab1;
+  margin-bottom: 1.5rem;
+}
+
+.compromisso p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+}
+
+/* RESPONSIVO SERVIÇOS */
+@media (max-width: 768px) {
+  .banner-servicos h1 { font-size: 2.5rem; }
+  .banner-servicos p { font-size: 1.1rem; }
+  .lista-servicos { margin: 2rem auto; gap: 1.5rem; }
+  .card-servico { padding: 1.8rem; }
+  .card-servico h2 { font-size: 1.5rem; }
+  .compromisso { margin: 2rem 1rem; padding: 1.8rem; }
+  .compromisso h2 { font-size: 1.8rem; }
+}
