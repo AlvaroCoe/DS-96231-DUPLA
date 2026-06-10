@@ -1,18 +1,20 @@
 import { Link, NavLink } from 'react-router-dom'
 import './style.css'
 
+import imgLogo from '../../assets/LogoPetShop.svg'
+
 export default function Header() {
     return (
         <header className="header-container">
             
             <div className="header-logo-box">
                 <Link to='/' className='header-logo'>
-                    <h1>🐾 Pet & Shop</h1>
+                    <h1>Pet & Shop</h1>
                 </Link>
             </div>
 
-            <div className="header-busca">
-                <input type="text" placeholder="O que seu pet precisa hoje?" />
+            <div className="header-imagem">
+                <img src={imgLogo} alt="Imagem Logo" />
             </div>
 
             <nav className="header-nav">
@@ -21,15 +23,6 @@ export default function Header() {
                 <NavLink to='/servicos'>Serviços</NavLink>
                 <NavLink to='/sobrenos'>SobreNos</NavLink>
             </nav>
-
-            <div className="header-acoes">
-                <Link to='/carrinho' className="btn-carrinho">
-                    🛒 <span>0</span>
-                </Link>
-                <Link to='/login' className="btn-entrar">
-                    Entrar
-                </Link>
-            </div>
 
         </header>
     )
