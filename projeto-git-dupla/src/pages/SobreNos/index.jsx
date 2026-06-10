@@ -56,15 +56,29 @@ export default function SobreNos() {
       </section>
 
       <section className="equipe">
-        <h2>Nossa Equipe</h2>
+  <h2>Nossa Equipe</h2>
+  
+  <p>
+    Contamos com veterinários qualificados, atendentes treinados e
+    profissionais apaixonados por animais. Nossa equipe está preparada
+    para orientar os tutores e oferecer os melhores cuidados para cada
+    pet.
+  </p>
 
-        <p>
-          Contamos com veterinários qualificados, atendentes treinados e
-          profissionais apaixonados por animais. Nossa equipe está preparada
-          para orientar os tutores e oferecer os melhores cuidados para cada
-          pet.
-        </p>
-      </section>
+  <div className="membros-container">
+    <div className="membro-card">
+      <h3>Dra. Camila Viana</h3>
+      <p className="cargo">Veterinária & Desenvolvedora Front-End</p>
+      <span className="detalhe">Sistemas • 3º Módulo</span>
+    </div>
+
+    <div className="membro-card">
+      <h3>Dr. Alvaro Coelho</h3>
+      <p className="cargo">Veterinário & Desenvolvedor Full-Stack</p>
+      <span className="detalhe">Sistemas • 3º Módulo</span>
+    </div>
+  </div>
+</section>
     </main>
   );
 }

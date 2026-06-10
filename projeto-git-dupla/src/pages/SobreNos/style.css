@@ -1,0 +1,205 @@
+.sobre-nos {
+  background: #fffdfd;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+  color: #444;
+}
+
+/* HERO */
+
+.hero-sobre {
+  background: linear-gradient(
+    135deg,
+    #d8f7f5,
+    #f3d8f8
+  );
+
+  text-align: center;
+  padding: 5rem 2rem;
+  border-radius: 0 0 40px 40px;
+}
+
+.hero-sobre h1 {
+  font-size: 3.5rem;
+  color: #9d2ab1;
+  margin-bottom: 1.5rem;
+}
+
+.hero-sobre p {
+  max-width: 850px;
+  margin: auto;
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+/* CARDS CENTRALIZADOS */
+
+.historia,
+.missao,
+.equipe {
+  background: white;
+
+  max-width: 700px;
+  margin: 3rem auto;
+
+  padding: 2.5rem;
+
+  border-radius: 25px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s ease;
+}
+
+.historia:hover,
+.missao:hover,
+.equipe:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 15px 35px rgba(157, 42, 177, 0.15);
+}
+
+/* TÍTULOS */
+
+.historia h2,
+.missao h2,
+.equipe h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+
+  margin-bottom: 1.2rem;
+
+
+  color: #9d2ab1;
+}
+
+/* MISSÃO E VISÃO */
+.missao h2:nth-of-type(1) {
+  color: #9d2ab1; /* Missão fica Roxo */
+}
+
+.missao h2:nth-of-type(2),
+.missao h2:nth-of-type(3) {
+  color: #00bcb3; /* Visão e Valores ficam Ciano */
+}
+
+.historia p,
+.missao p,
+.equipe p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+}
+
+/* VALORES */
+
+.missao ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.missao li {
+  background: linear-gradient(
+    90deg,
+    #d8f7f5,
+    #f3d8f8
+  );
+
+  padding: 1rem 1.3rem;
+  margin-bottom: 1rem;
+
+  border-radius: 15px;
+
+  font-size: 1.15rem;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.missao li:hover {
+  transform: translateX(10px);
+}
+
+/* DECORAÇÃO */
+
+.historia,
+.missao,
+.equipe {
+  position: relative;
+}
+
+.historia::before,
+.missao::before,
+.equipe::before {
+  content: "🐾";
+
+  position: absolute;
+  top: 15px;
+  right: 20px;
+
+  font-size: 2rem;
+  opacity: 0.15;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  .hero-sobre h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-sobre p {
+    font-size: 1.1rem;
+  }
+
+  .historia,
+  .missao,
+  .equipe {
+    margin: 2rem 1rem;
+    padding: 1.8rem;
+  }
+
+  .historia h2,
+  .missao h2,
+  .equipe h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Estilização dos cartões dos integrantes */
+.membros-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Garante que quebre linha no celular */
+}
+
+.membro-card {
+  flex: 1;
+  min-width: 250px;
+  background: #fdfafd;
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid #f3d8f8;
+  text-align: left;
+}
+
+.membro-card h3 {
+  color: #9d2ab1; /* Roxo padrão do seu Hero */
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.membro-card .cargo {
+  font-size: 1rem !important;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.membro-card .detalhe {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
