@@ -36,26 +36,28 @@
   background: linear-gradient(90deg, var(--color-purple-main), var(--color-green-main));
 }
 
-/* Container ajustado em 2 colunas simétricas e centralizadas */
+/* Container de 2 colunas simétricas alinhadas à esquerda */
 .footer-container {
-  max-width: 900px; /* Reduzido para o conteúdo não ficar espalhado demais */
+  max-width: 900px; 
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr; /* Divide igualmente entre Contato e Horário */
-  gap: 4rem; /* Espaço elegante entre as duas colunas */
+  gap: 4rem; 
   padding-bottom: 2rem;
 }
 
 /* ==========================================================================
-   Colunas de Informação (Organização Clássica e Limpa)
+   Colunas de Informação (Alinhamento à Esquerda)
    ========================================================================== */
 .footer-col {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem; /* Espaçamento confortável entre as linhas */
+  gap: 0.8rem;
+  align-items: flex-start; /* MODIFICAÇÃO: Garante que os blocos alinhem à esquerda */
+  text-align: left;        /* MODIFICAÇÃO: Força o texto para a esquerda */
 }
 
-/* Títulos limpos - SEM os tracinhos verdes */
+/* Títulos limpos e alinhados */
 .footer-col h3 {
   color: var(--color-text-dark);
   font-size: 1.3rem;
@@ -64,7 +66,7 @@
   letter-spacing: -0.3px;
 }
 
-/* Estilização e alinhamento dos textos */
+/* Estilização dos parágrafos com emojis alinhados */
 .footer-col p {
   color: var(--color-text-muted);
   font-size: 1rem;
@@ -72,7 +74,8 @@
   margin: 0;
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Alinha o emoji perfeitamente com o texto ao lado */
+  justify-content: flex-start; /* MODIFICAÇÃO: Mantém emojis fixos no começo da linha */
+  gap: 0.6rem; 
 }
 
 /* Destaca sutilmente o aviso de Emergências */
@@ -87,9 +90,9 @@
 .footer-bottom {
   max-width: 900px;
   margin: 1.5rem auto 0 auto;
-  border-top: 1px solid rgba(157, 42, 177, 0.1); /* Divisória muito sutil */
+  border-top: 1px solid rgba(157, 42, 177, 0.1); 
   padding-top: 1.5rem;
-  text-align: center;
+  text-align: center; /* Mantém apenas os direitos autorais centralizados */
 }
 
 .footer-bottom p {
@@ -99,7 +102,7 @@
 }
 
 /* ==========================================================================
-   Responsividade Mobile
+   Responsividade Mobile (Centraliza apenas em telas pequenas)
    ========================================================================== */
 @media (max-width: 650px) {
   .footer {
@@ -109,14 +112,14 @@
   .footer-container {
     grid-template-columns: 1fr; /* Vira uma única coluna no celular */
     gap: 2rem;
-    text-align: center;
   }
 
   .footer-col {
-    align-items: center ; /* Centraliza o conteúdo no mobile */
+    align-items: center; /* No mobile, centraliza para melhor leitura */
+    text-align: center;
   }
 
   .footer-col p {
-    justify-content: center; /* Garante os emojis centralizados com o texto */
+    justify-content: center; /* Centraliza os emojis com o texto no mobile */
   }
 }
